@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <div>
-                <h1>API SKULLE VÆRE HER:</h1>
+                <h1> Bilabonnement eksamen af Hans og Frederik </h1>
 
             </div>
         </div>
