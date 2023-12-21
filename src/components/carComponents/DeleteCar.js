@@ -17,6 +17,7 @@ function DeleteCar() {
 
     const handleCancel = () => {
         navigate('/cars'); 
+    };
 
     return (
         <div className="delete-car-container">
