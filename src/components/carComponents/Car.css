@@ -6,10 +6,10 @@
 }
 
 .Car-container img {
-    width: 400px; /* Set your preferred fixed width */
-    height: 350px; /* Set your preferred fixed height */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    border-radius: 8px; /* Add border radius if needed */
+    width: 400px; 
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 8px; 
 }
 
 .Car-list {
@@ -30,10 +30,10 @@
 }
 
 .Car-item img {
-    width: 400px; /* Set your preferred fixed width */
-    height: 350px; /* Set your preferred fixed height */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    border-radius: 8px; /* Add border radius if needed */
+    width: 400px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
 
 .Car-links {
@@ -87,7 +87,7 @@
 }
 
 .delete-car-container h2 {
-    color: #dc3545; /* Red color for the heading */
+    color: #dc3545; 
     margin-bottom: 20px;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .delete-car-container button {
-    background-color: #28a745; /* Green color for the buttons */
+    background-color: #28a745; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -106,15 +106,15 @@
 }
 
 .delete-car-container #complete-delete:hover {
-    background-color: #dc3545; /* Red color on hover for "Yes, Delete" button */
+    background-color: #dc3545; 
 }
 
 .delete-car-container #cancel-delete {
-    background-color: #007BFF; /* Blue color for the "No, Cancel" button */
+    background-color: #007BFF; 
 }
 
 .delete-car-container #cancel-delete:hover {
-    background-color: #0056b3; /* Darker blue on hover for "No, Cancel" button */
+    background-color: #0056b3; 
 }
 
 .update-car {
