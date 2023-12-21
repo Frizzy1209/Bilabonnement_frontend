@@ -8,15 +8,15 @@ function DeleteDamage() {
     const navigate = useNavigate();
 
     const handleDelete = () => {
-        axios.delete(`https://bilwebapp.azurewebsites.net/damages/${id}`) // Update the endpoint to match your backend URL
+        axios.delete(`https://bilwebapp.azurewebsites.net/damages/${id}`) 
             .then(() => {
-                navigate('/damages'); // Assuming you have a route for listing damages
+                navigate('/damages'); 
             })
             .catch(error => console.error('Error deleting damage:', error));
     };
 
     const handleCancel = () => {
-        navigate('/damages'); // Redirect to the damage list page or adjust accordingly
+        navigate('/damages'); 
     };
 
     return (
