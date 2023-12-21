@@ -7,7 +7,7 @@ function ListDamage() {
     const [damages, setDamages] = useState([]);
 
     useEffect(() => {
-        axios.get('https://bilwebapp.azurewebsites.net/damages') // Update the endpoint to match your backend URL
+        axios.get('https://bilwebapp.azurewebsites.net/damages') 
             .then(response => setDamages(response.data))
             .catch(error => console.error('Error fetching damages:', error));
     }, []);
