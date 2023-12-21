@@ -12,14 +12,14 @@ function UpdateDamage() {
         cleaningCost: 0,
         lateReturnCost: 0,
         carId: '',
-        subscription: null, // Change to an object
+        subscription: null, 
     });
 
     const [cars, setCars] = useState([]);
     const [subscriptions, setSubscriptions] = useState([]);
 
     useEffect(() => {
-        // Fetch the existing damage details
+        
         axios.get(`https://bilwebapp.azurewebsites.net/damages/${id}`)
             .then(response => {
                 const { carDamage, reparationCost, cleaningCost, lateReturnCost, car, subscription } = response.data;
@@ -29,17 +29,17 @@ function UpdateDamage() {
                     cleaningCost,
                     lateReturnCost,
                     carId: car.id,
-                    subscription: subscription, // Change to an object
+                    subscription: subscription, 
                 });
             })
             .catch(error => console.error('Error fetching damage:', error));
 
-        // Fetch the list of cars
+       
         axios.get('https://bilwebapp.azurewebsites.net/cars')
             .then(response => setCars(response.data))
             .catch(error => console.error('Error fetching cars:', error));
 
-        // Fetch the list of subscriptions
+        
         axios.get('https://bilwebapp.azurewebsites.net/subscriptions')
             .then(response => setSubscriptions(response.data))
             .catch(error => console.error('Error fetching subscriptions:', error));
@@ -50,8 +50,8 @@ function UpdateDamage() {
 
         axios.put(`https://bilwebapp.azurewebsites.net/damages/${id}`, {
             ...damage,
-            car: { id: damage.carId }, // Add car property
-            subscription: damage.subscription, // Keep subscription as an object
+            car: { id: damage.carId }, 
+            subscription: damage.subscription, 
         })
             .then(() => navigate('/damages'))
             .catch((error) => console.error('Error updating damage:', error));
