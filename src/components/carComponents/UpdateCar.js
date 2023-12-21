@@ -10,7 +10,7 @@ function UpdateCar() {
         brand: '',
         purchasePrice: 0,
         carFuel: '',
-        imageUrl: '', // Add imageUrl to the state
+        imageUrl: '', 
     });
 
     useEffect(() => {
