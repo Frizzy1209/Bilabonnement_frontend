@@ -12,10 +12,10 @@ function CreateDamage() {
         cleaningCost: 0,
         lateReturnCost: 0,
         carId: '',
-        subscription: null, // Change to an object
+        subscription: null, 
     });
 
-    // Define state for cars and subscriptions
+    
     const [cars, setCars] = useState([]);
     const [subscriptions, setSubscriptions] = useState([]);
 
@@ -31,42 +31,41 @@ function CreateDamage() {
                         cleaningCost,
                         lateReturnCost,
                         carId: car.id,
-                        subscription: subscription, // Change to an object
+                        subscription: subscription, 
                     });
                 })
                 .catch(error => console.error('Error fetching damage:', error));
         }
 
-        // Fetch the list of cars
+        
         axios.get('https://bilwebapp.azurewebsites.net/cars')
             .then(response => setCars(response.data))
             .catch(error => console.error('Error fetching cars:', error));
 
-        // Fetch the list of subscriptions
+        
         axios.get('https://bilwebapp.azurewebsites.net/subscriptions')
             .then(response => setSubscriptions(response.data))
             .catch(error => console.error('Error fetching subscriptions:', error));
     }, [id]);
 
-    // Inside the CreateDamage component
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
         const apiEndpoint = id
-            ? `https://bilwebapp.azurewebsites.net/damages/${id}` // For updating an existing damage
-            : 'https://bilwebapp.azurewebsites.net/damages'; // For creating a new damage
-
-        const method = id ? 'put' : 'post'; // Use POST for creating and PUT for updating
-
+            ? `https://bilwebapp.azurewebsites.net/damages/${id}` 
+            : 'https://bilwebapp.azurewebsites.net/damages'; 
+        
+        const method = id ? 'put' : 'post'; 
+        
         axios({
             method,
             url: apiEndpoint,
             data: {
                 ...damage,
-                id: undefined, // Remove id when creating a new damage
-                car: { id: damage.carId }, // Add car property
-                subscription: damage.subscription, // Keep subscription as an object
+                id: undefined, 
+                car: { id: damage.carId }, 
+                subscription: damage.subscription, 
             },
         })
             .then(() => navigate('/damages'))
