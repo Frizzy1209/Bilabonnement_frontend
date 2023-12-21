@@ -6,7 +6,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     const handleLogoClick = () => {
-        // Navigate to the Home page when the logo is clicked
+        
         navigate('/');
     };
 
