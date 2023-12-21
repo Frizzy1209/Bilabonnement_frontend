@@ -37,7 +37,7 @@
 .list-customer .add-link {
     display: block;
     margin-top: 20px;
-    color: #28a745; /* Green color for the "Add New Customer" link */
+    color: #28a745; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -77,7 +77,7 @@
 }
 
 .delete-customer h2 {
-    color: #dc3545; /* Red color for the heading */
+    color: #dc3545; 
 }
 
 .delete-customer p {
@@ -85,7 +85,7 @@
 }
 
 .delete-customer button {
-    background-color: #28a745; /* Green color for the buttons */
+    background-color: #28a745; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -95,15 +95,13 @@
 }
 
 .delete-customer button:hover {
-    background-color: #dc3545; /* Red color on hover for "Yes, Delete" button */
-}
+    background-color: #dc3545; 
 
 .delete-customer .cancel-button {
-    background-color: #007BFF; /* Blue color for the "No, Cancel" button */
-}
+    background-color: #007BFF; 
 
 .delete-customer .cancel-button:hover {
-    background-color: #0056b3; /* Darker blue on hover for "No, Cancel" button */
+    background-color: #0056b3; 
 }
 
 .create-customer {
