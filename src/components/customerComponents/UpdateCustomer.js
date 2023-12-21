@@ -44,7 +44,7 @@ function UpdateCustomer() {
                         value={customer.username}
                         onChange={handleChange}
                         required
-                        readOnly // Make the username read-only
+                        readOnly 
                     />
                 </div>
                 <br/>
