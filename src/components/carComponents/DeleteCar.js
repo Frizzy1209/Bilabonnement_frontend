@@ -8,16 +8,15 @@ function DeleteCar() {
     const navigate = useNavigate();
 
     const handleDelete = () => {
-        axios.delete(`https://bilwebapp.azurewebsites.net/cars/${id}`) // Update the endpoint to match backend URL
+        axios.delete(`https://bilwebapp.azurewebsites.net/cars/${id}`) 
             .then(() => {
-                navigate('/cars'); // Redirect to the car list page after successful deletion
+                navigate('/cars'); 
             })
             .catch(error => console.error('Error deleting car:', error));
     };
 
     const handleCancel = () => {
-        navigate('/cars'); // Redirect to the car list page if the deletion is canceled
-    };
+        navigate('/cars'); 
 
     return (
         <div className="delete-car-container">
