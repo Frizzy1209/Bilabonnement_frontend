@@ -8,15 +8,15 @@ function DeleteCustomer() {
     const navigate = useNavigate();
 
     const handleDelete = () => {
-        axios.delete(`https://bilwebapp.azurewebsites.net/customers/${username}`) // Update the endpoint to match your backend URL
+        axios.delete(`https://bilwebapp.azurewebsites.net/customers/${username}`) 
             .then(() => {
-                navigate('/customers'); // Redirect to the customer list page after successful deletion
+                navigate('/customers'); 
             })
             .catch(error => console.error('Error deleting customer:', error));
     };
 
     const handleCancel = () => {
-        navigate('/customers'); // Redirect to the customer list page if the deletion is canceled
+        navigate('/customers'); 
     };
 
     return (
