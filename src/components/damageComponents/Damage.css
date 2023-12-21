@@ -29,7 +29,7 @@
 }
 
 .list-damages a:hover {
-    color: #3543dc; /* Red color on hover for all links */
+    color: #3543dc; 
 }
 
 .list-damages #delete-damage {
@@ -37,13 +37,13 @@
 }
 
 .list-damages #delete-damage:hover {
-    color: #dc3545; /* Red color on hover for "Delete" link */
+    color: #dc3545; 
 }
 
 .list-damages .add-link {
     display: block;
     margin-top: 20px;
-    color: #28a745; /* Green color for the "Add New Damage" link */
+    color: #28a745; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@
 }
 
 .delete-damage-container h2 {
-    color: #dc3545; /* Red color for the heading */
+    color: #dc3545; 
     margin-bottom: 20px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .delete-damage-container button {
-    background-color: #28a745; /* Green color for the buttons */
+    background-color: #28a745; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -103,15 +103,15 @@
 }
 
 .delete-damage-container button:hover {
-    background-color: #dc3545; /* Red color on hover for "Yes, Delete" button */
+    background-color: #dc3545; 
 }
 
 .delete-damage-container .cancel-button {
-    background-color: #007BFF; /* Blue color for the "No, Cancel" button */
+    background-color: #007BFF; 
 }
 
 .delete-damage-container .cancel-button:hover {
-    background-color: #0056b3; /* Darker blue on hover for "No, Cancel" button */
+    background-color: #0056b3; 
 }
 
 .create-damage {
