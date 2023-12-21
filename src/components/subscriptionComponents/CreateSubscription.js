@@ -21,7 +21,7 @@ function CreateSubscription() {
         customerId: null,
     });
 
-    // Define state for cars, damages, and customers
+   
     const [cars, setCars] = useState([]);
     const [customers, setCustomers] = useState([]);
 
@@ -32,7 +32,7 @@ function CreateSubscription() {
             .catch(error => console.error('Error fetching cars:', error));
 
 
-        // Fetch the list of customers
+        
         axios.get('https://bilwebapp.azurewebsites.net/customers')
             .then(response => setCustomers(response.data))
             .catch(error => console.error('Error fetching customers:', error));
